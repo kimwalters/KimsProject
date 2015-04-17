@@ -1,29 +1,29 @@
 {
-  "name": "SimpleExpressServerForHeroku",
+  "name": "Kim's Website",
   "version": "0.1.0",
-  "description": "A simple server based on Node.js and Express for deployment on Heroku",
+  "description": "Portfolio Site",
   "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidand36/SimpleExpressServerForHeroku.git"
+    "url": "https://github.com/kimwalters/KimsProject"
   },
   "keywords": [
-    "express",
-    "static",
-    "heroku"
+    "portfolio",
+    "web design",
+    "graphic design"
   ],
   "author": "David M. Anderson",
   "license": "GPL 3.0",
   "bugs": {
-    "url": "https://github.com/davidand36/SimpleExpressServerForHeroku/issues"
+    "url": "https://github.com/kimwalters/KimsProject"
   },
   "engines": {
       "node": "0.10.x"
   },
-  "homepage": "https://github.com/davidand36/SimpleExpressServerForHeroku",
+  "homepage": "https://github.com/kimwalters/KimsProject",
   "dependencies": {
     "compression": "^1.0.9",
     "express": "^4.7.2",
