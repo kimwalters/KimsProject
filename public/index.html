@@ -5,17 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kim's Portfolio</title> 
+  <link rel="icon" type="image/ico" href="Images/favicon.ico"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  
+  <link rel="stylesheet" href="styles/stylesheet.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <style>
-    .container.marketing {margin-top: 90px; }
-  </style>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>  
 </head>
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-default fixedNav navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,43 +27,49 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Kim Walters</a>
+        <a class="navbar-brand" href="index.html">Kim Walters</a>
       </div>
+      
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">Learn More</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="page-scroll" href="#home">Home</a></li>
+          <li><a class="page-scroll" href="#about">About</a></li>
+          <li><a class="page-scroll" href="#work"><span class="projects">Work</span></a></li>         
+          <li class="last"><a class="page-scroll" href="#contact">Contact</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
   
-  <div class="container marketing">
+  <section id="home" class="container home">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-12">
+          <h1 class="subhead">My Name Is</h1>
+          <h1 class="shadow">Kim Walters</h1>
+        </div>
+       <!-- <div class="col-lg-4">
           <img class="img-circle" src="images/140x140-halloween.jpg" alt="Print Design" style="width: 140px; height: 140px;">
           <h2>Print Design</h2>
           <p>I started my professional career working on print ads and newspaper layouts, where I first fell in love with design.</p>
           <p><a class="btn btn-default" href="#" role="button">See More &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+       <!-- <div class="col-lg-4">
           <img class="img-circle" src="images/140x140-soap.jpg" alt="Illustration" style="width: 140px; height: 140px;">
           <h2>Illustration</h2>
           <p>Color pencil illustrations combined with digital art have given some of my art work a unique look.</p>
           <p><a class="btn btn-default" href="#" role="button">See More &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+       <!-- <div class="col-lg-4">
           <img class="img-circle" src="images/140x140-website.jpg" alt="Web Design" style="width: 140px; height: 140px;">
           <h2>Web Design</h2>
           <p>I have several years experience building out landing pages for car dealerships based out of the US and Australia.</p>
           <p><a class="btn btn-default" href="#" role="button">See More &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+        
       </div><!-- /.row -->
 
     <!-- START THE FEATURETTES -->
-    <hr class="featurette-divider">
+   <!-- <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7">
@@ -98,12 +107,95 @@
 
     <hr class="featurette-divider">
         <!-- /END THE FEATURETTES -->
+  </section><!-- END OF container marketing -->
+  
+  <section id="about" class="container about">
+      <div class="row">
+        <div class="col-lg-6"> 
+          <h2>The Facts.</h2>
+          <p>Hi, I'm Kim. I have always been interested in the web for as long as I can remember. When I was in the fifth grade I made my first website using www.angelfire.com, I think I started a beanie baby blog. As I grew older I started taking more of an interest in print design. In 2009 I recieved a Bachelor of Fine Arts with a specialization in Graphic Design from Central Washington University.</p>
+          <p>Of course there is more to me than just my want to work in web design. Here are some of my highlights:</p>
+          <ul>
+            <li><i class="bullet fa fa-chevron-right"></i>I've traveled to 11 different countries, including studying abroad in Ireland and helping manage a boutique hotel in Mexico.</li>
+            <li><i class="bullet fa fa-chevron-right"></i>I worked as a waitress and hostess throughout highschool and college.</li>
+            <li><i class="bullet fa fa-chevron-right"></i>I've been skydiving.</li>
+            <li><i class="bullet fa fa-chevron-right"></i>I lived in Hawaii, on Molokai the fifth smallest islands for 8 months after college working on their local newspaper.</li>
+            <li><i class="bullet fa fa-chevron-right"></i>My favorite sea animal is the blue whale.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">          
+          <figure >
+            <img src="images/truelove.jpg" alt="This is me with a sloth.">
+            <figcaption>This is me with a sloth, one of my life goals.</figcaption>
+          </figure>
+        </div><!-- /.row -->
+  </section><!-- END OF ABOUT -->
+    
+      
+  <section id="work" class="container work">
+    <div class="row">
+       <div class="col-lg-3">
+          <a href="#" class="portfolio"><img src="images/400x400-emotions.jpg" alt="Print Design" style=""></a>
+       </div><!-- /.col-lg-4 -->
+       <div class="col-lg-3">
+          <img class="" src="images/400x400-newspaper.jpg" alt="Illustration" style="width: 300px; height: 300px;">
+        </div><!-- /.col-lg-4 -->
+       <div class="col-lg-3">
+          <img class="" src="images/400x400-starfish.jpg" alt="Web Design" style="width: 300px; height: 300px;">
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="" src="images/400x400-starfish.jpg" alt="Web Design" style="width: 300px; height: 300px;">
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </section><!-- END OF WORK -->
+    
+  <section id="contact" class="container contact">
+    <div class="row">
+       <div class="col-lg-6">
+          <form method="post" action="mailto:kimwalters85@gmail.com">
+            <fieldset>
+              <legend>Contact Kim</legend>
+                <p><label for="name" class="formwidth">Name:</label>
+                <input type="text" autocomplete="on" name="name" id="name" placeholder="Name" required /></p>
+              
+                <p><label for="email" class="formwidth">Email:</label>
+                <input type="email" autocomplete="on" name="email" id="email" placeholder="Email" required /></p>
 
+                <p><label for="comments">Comments/Questions:</label></p>
+                <p><textarea name="comments" rows="10" cols="50" id="comments" required ></textarea></p>	
+            </fieldset>
+
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+    
+        </div><!-- /.col-lg-6 -->
+       <div class="col-lg-6">
+         <section class="contact-info">
+            <p>Email: kimwalters85@gmail.com</p>
+            <p>425-754-5867</p>
+            <p>I currently live in Seattle, WA right off of Alki. If you can't find me, scour the beach.</p>
+         </section>
+        </div><!-- /.col-lg-6 -->
+              
+      </div><!-- /.row -->
+    </section><!-- END OF CONTACT -->
+    
+    
       <!-- FOOTER -->
     <footer>
-      <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2014 Kim Walters. &middot; <a href="#">Contact</a></p>
+      <p>&copy; 2015 Kim Walters</p>
+      <a href="" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+
     </footer>
-  </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 </body>
 </html>

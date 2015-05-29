@@ -1,0 +1,265 @@
+body {  background-color: #B0B0B0;
+        margin: 0px;
+        padding: 0px; }
+
+.navbar {
+  background: url(../images/speckled-nav.jpg) repeat-x;
+  height: 100%;
+}
+.fixedNav {
+  height: 12em;
+}
+.navbar-header .navbar-brand {
+    padding: 70px 50px 0 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+}
+#navbar {
+  padding: 50px 0 0;
+}
+#navbar li {
+  padding: 0 20px 0 20px;
+  font-family: 'Sacramento', cursive;
+  font-size: 2.5em;
+  border-right: 2px solid gray;
+}
+#navbar li.last {
+  border-right: none;
+}
+<!--.home {
+    background-image: url(images/pig_right.png);
+    background-repeat: no-repeat; 
+    padding-left: 15px; 
+}-->
+.home {
+  background-image: url(../images/map-blue-header.jpg);
+  background-color:white;
+  width: 100%;
+  padding: 15em 5em 10em;
+  min-height: 100%;
+  position: relative;
+  
+}
+.about {
+  background-color:white;
+  width: 100%;
+  padding: 15em 5em 2em;
+  min-height: 100%;
+  position: relative;
+}
+.contact {
+  background-color:white;
+  width: 100%;
+  padding: 15em 5em 2em;
+  min-height: 100%;
+  position: relative;
+}
+.contact .contact-info {
+  padding: 5em 0 0 0;
+  font-size: 1em;
+}
+
+.offscreen { position: absolute;
+             left: -10000px;
+             top: auto;
+             width: 1px;
+             height: 1px;
+             overflow: hidden; }
+
+.offscreen:focus { position: static;
+                   width: auto;
+                   height: auto; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Anton', sans-serif; }
+
+h1 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10em;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  <!--text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);-->
+	text-shadow:
+	1px 1px 0 #CCC,
+	2px 2px 0 #CCC, /* end of 2 level deep grey shadow */
+	3px 3px 0 #444,
+	4px 4px 0 #444,
+	5px 5px 0 #444,
+	6px 6px 0 #444; /* end of 4 level deep dark shadow */
+}
+h1:hover
+{
+ 	/* CSS3 Transform Effect */
+  	-webkit-transform: scale(1.2);     /* Safari & Chrome */
+  	-moz-transform: scale(1.2);        /* Firefox */
+  	-o-transform: scale(1.2);          /* Opera */
+}
+
+.shadow { 
+   text-shadow: 1px 1px #F2B749, 
+                2px 2px #F2B749, 
+                3px 3px #F2B749;
+   -webkit-transition: all 0.12s ease-out;
+   -moz-transition:    all 0.12s ease-out;
+   -ms-transition:     all 0.12s ease-out;
+   -o-transition:      all 0.12s ease-out;
+}
+.shadow:hover {
+   position: relative; 
+   top: -3px; 
+   left: -3px; 
+   text-shadow: 1px 1px #F2B749, 
+                2px 2px #F2B749, 
+                3px 3px #F2B749, 
+                4px 4px #F2B749, 
+                5px 5px #F2B749, 
+                6px 6px #F2B749;
+}
+
+h1.subhead {
+  color: #F2B749;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: dimgray;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;}
+
+.about p {
+  color: gray;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 0 5rem 0 0;
+}
+
+.about ul {
+  color: gray; 
+  float: left;
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  text-indent: -1em;
+  width: 70%;
+}
+
+.about figure img {
+  width: 60%;
+  padding: 5rem 1rem 0 0;
+}
+.about figure {
+}
+
+.about figcaption { 
+  font-size: 1.5em; 
+  font-family: 'Sacramento', cursive;
+  padding: 1em 0 0 0;
+}
+.work {
+  background-color:white;
+  width: 100%;
+  padding: 15em 5em 2em;
+  min-height: 100%;
+  position: relative;
+}
+
+.work .portfolio img {
+  width: 100px;
+  background: url("../images/400x400-emotions.jpg");
+  background-image: url("../images/400x400-emotions.jpg"), none;
+}
+.work .portfolio img::after {
+  width: 200px;
+}
+<!--.icon-nudge {
+  position: relative;
+  background: url("../images/400x400-emotions.jpg");
+  background-image: url("../images/400x400-emotions.jpg"), none;
+  -webkit-transition: background 0.2s;
+          transition: background 0.2s;
+}
+
+.icon-nudge::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  content: "";
+  -webkit-transition: height 0.9s;
+          transition: height 0.2s;
+}
+
+.icon-nudge:hover::after {
+  height: 18px;
+}
+.icon-nudge.facebook {
+  background-color: #3b5998;
+  background-position: 0 0;
+}
+
+.icon-nudge.facebook:hover {
+  background-position: 0 0;
+}
+
+.icon-nudge.facebook::after {
+  background-color: #1e2e4f;
+}-->
+
+
+footer {
+  clear:both;
+  background-color: #37364d;
+  color: white;
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+}
+
+footer p { 
+  font-size: 1.5em; 
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  width: 100%;
+}
+
+.fa-linkedin {
+  background-color:black;
+  color: white;
+  border-radius: 2em;
+  padding: .5em;  
+  margin: 0 5px 0 0;
+}
+.fa-github {
+  background-color:black;
+  color: white;
+  border-radius: 2em;
+  padding: .5em; 
+  margin: 0 5px 0 0;
+}
+
+footer img {
+  width: 2rem;
+  padding: 2.5rem .75rem;
+}
+
+.bullet {
+  padding-right: .5em;
+}
