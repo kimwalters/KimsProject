@@ -7,7 +7,7 @@ body {  background-color: #B0B0B0;
   height: 100%;
 }
 .fixedNav {
-  height: 12em;
+  height: 10em;
 }
 .navbar-header .navbar-brand {
     padding: 70px 50px 0 0;
@@ -35,7 +35,7 @@ body {  background-color: #B0B0B0;
   background-image: url(../images/map-blue-header.jpg);
   background-color:white;
   width: 100%;
-  padding: 15em 5em 10em;
+  padding: 12em 5em 10em;
   min-height: 100%;
   position: relative;
   
@@ -43,20 +43,24 @@ body {  background-color: #B0B0B0;
 .about {
   background-color:white;
   width: 100%;
-  padding: 15em 5em 2em;
+  padding: 12em 5em 2em;
   min-height: 100%;
   position: relative;
 }
 .contact {
   background-color:white;
   width: 100%;
-  padding: 15em 5em 2em;
+  padding: 12em 5em 2em;
   min-height: 100%;
   position: relative;
 }
 .contact .contact-info {
   padding: 5em 0 0 0;
   font-size: 1em;
+  border-left: 1px solid #D8D8D8;
+  padding-left: 2em;
+  height: 300px;
+  margin: 2em 0 0 2em;
 }
 
 .offscreen { position: absolute;
@@ -137,15 +141,23 @@ h1.subhead {
 }
 
 h2 {
-  color: dimgray;
+  color: rgb(54, 54, 78);
   font-family: 'Oswald', sans-serif;
   font-size: 3em;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+  padding: 0 0 .5em 0;
+}
+
+.row {
+  padding: 0 0 75px 0;
+}
+
+/* ABOUT */
 
 .about p {
   color: gray;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   padding: 0 5rem 0 0;
 }
 
@@ -154,24 +166,100 @@ h2 {
   float: left;
   list-style: none;
   font-size: 1.2rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   text-indent: -1em;
   width: 70%;
 }
 
 .about figure img {
   width: 60%;
-  padding: 5rem 1rem 0 0;
+  padding: 0rem 1rem 0 0;
 }
 .about figure {
 }
 
 .about figcaption { 
-  font-size: 1.5em; 
+  font-size: 1.7em; 
+  line-height: 1em;
   font-family: 'Sacramento', cursive;
-  padding: 1em 0 0 0;
+  padding: .5em 0 0 0;
 }
-.work {
+
+/* PORTFOLIO */
+
+#work {
+  background-color:white;
+  width: 100%;
+  padding: 12em 5em 2em;
+  min-height: 100%;
+  position: relative;
+}
+#work img {
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid rgba(192,192,192,0.3);
+}
+#work img:hover {
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid rgba(54, 54, 78, 1);
+}
+#work a img {
+	-webkit-transition: all 0.5s;
+}
+
+/*Hover effects*/
+#work a img:hover {
+	-webkit-filter: none; /*Returns to default state*/
+}
+/*Default state for brightness has to be specified specifically*/
+#work a img.brightness:hover {
+	-webkit-filter: brightness(0);
+}
+
+#work .col-lg-3 {
+  padding-bottom: 2em;
+}
+/*Title styles*/
+#work a .title {
+  background: rgba(24, 31, 68, 0.76);
+  padding: 15px 0;
+  position: absolute;
+  top: 235px;
+  left: 20;
+  text-align: center;
+  transition: all 0.2s ease-in; 
+    -webkit-transition: all 0.1s ease-in;  
+    -moz-transition: all 0.1s ease-in;  
+    -o-transition: all 0.1s ease-in;  
+  width: 302px;
+  height: 68px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+  color: white;
+  font-size: 1.5em;
+  
+}
+#work a:hover .title {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Filter styles*/
+.saturate {-webkit-filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px);}
+.invert {-webkit-filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);}
+.opacity {-webkit-filter: opacity(50%);}
+
+/* GALLERY */
+
+#gallery {
   background-color:white;
   width: 100%;
   padding: 15em 5em 2em;
@@ -179,51 +267,8 @@ h2 {
   position: relative;
 }
 
-.work .portfolio img {
-  width: 100px;
-  background: url("../images/400x400-emotions.jpg");
-  background-image: url("../images/400x400-emotions.jpg"), none;
-}
-.work .portfolio img::after {
-  width: 200px;
-}
-<!--.icon-nudge {
-  position: relative;
-  background: url("../images/400x400-emotions.jpg");
-  background-image: url("../images/400x400-emotions.jpg"), none;
-  -webkit-transition: background 0.2s;
-          transition: background 0.2s;
-}
 
-.icon-nudge::after {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  content: "";
-  -webkit-transition: height 0.9s;
-          transition: height 0.2s;
-}
-
-.icon-nudge:hover::after {
-  height: 18px;
-}
-.icon-nudge.facebook {
-  background-color: #3b5998;
-  background-position: 0 0;
-}
-
-.icon-nudge.facebook:hover {
-  background-position: 0 0;
-}
-
-.icon-nudge.facebook::after {
-  background-color: #1e2e4f;
-}-->
-
-
+/* FOOTER */
 footer {
   clear:both;
   background-color: #37364d;
@@ -263,3 +308,10 @@ footer img {
 .bullet {
   padding-right: .5em;
 }
+
+
+
+
+
+
+
